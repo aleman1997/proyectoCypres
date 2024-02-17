@@ -4,10 +4,10 @@ const { initialScreenPage } = require("../../../../Pages/InitialScreenPage/Initi
 
 describe("Registration on the utest page", function(){
 
-    it("Register Join Today", function(){
+    it.only("Register Join Today", function(){
         cy.visit('/')
         initialScreenPage.clickButtonJoinToday();
-        initialScreenPage.fillOutAllFields('Paco','Perez','pacpPerez234@gmail.com', 'September', 24, 3)
+        initialScreenPage.fillOutAllFields('Maria','Perez','pacpPerez234@gmail.com', 'September', 24, 3)
         initialScreenPage.clickInputLanguaje()
         initialScreenPage.selectInputClickOptionsLanguaje('Alb')
         initialScreenPage.clickButtonNextLocation()
